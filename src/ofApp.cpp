@@ -223,7 +223,7 @@ void ofApp::reply() {
 	ofxOscMessage message;
 	message.setAddress("/pmap/connection/responce/PA"); //change URL according to device name.
 
-	sleep(1000);
+	sleep(1); //sec
 	sender.sendMessage(message);
 
 	cout << "replay" << endl;
